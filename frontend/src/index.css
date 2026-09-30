@@ -1,0 +1,30 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  @apply bg-agri-offwhite text-gray-900 font-sans antialiased;
+}
+
+h1, h2, h3, h4 {
+  @apply font-serif;
+}
+
+:focus-visible {
+  outline: 3px solid #3E6B8A;
+  outline-offset: 2px;
+}
+
+.leaflet-container {
+  width: 100%;
+  height: 100%;
+  border-radius: 0.25rem;
+}
+
+::selection {
+  background: #cfe3d3;
+}
